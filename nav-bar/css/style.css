@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("/image/hhh.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(10%);
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensure full viewport height */
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px; /* Adjust padding as needed */
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+nav span {
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.4s ease-in-out all;
+}
+
+nav span:hover {
+    transform: translate(1.25rem);
+    color: #0ef;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 35px;
+}
+
+nav ul li a {
+    font-size: 30px;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #0ef;
+}
+
+.container {
+    display: flex; /* Added display: flex; */
+    flex-direction: column; /* Adjusted flex-direction as needed */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.container .span {
+    font-size: 50px;
+    color: #0ef;
+}
+
+.btn {
+    width: 200px;
+    height: 60px;
+    color: #fff;
+    font-size: 30px;
+    background: none;
+    border: 1px solid #000;
+    border-radius: 10px;
+    transition: 0.4s ease;
+}
+.btn:hover{
+    transform: translate(1.25rem);
+    width: 300px;
+    height: 80px;
+    color: #0ef;
+}
+@media screen and (max-width: 600px) {
+    nav {
+        padding: 20px; 
+        display: flex;
+        justify-content: center;
+    }
+    nav span{
+        text-align: center;
+    }
+
+    nav ul li {
+        display: none; 
+    }
+
+    nav ul li a {
+        font-size: 24px; 
+    }
+
+    .container .span {
+        font-size: 40px; 
+    }
+
+    .btn {
+        width: 150px; 
+        height: 50px; 
+        font-size: 24px; 
+    }
+}
